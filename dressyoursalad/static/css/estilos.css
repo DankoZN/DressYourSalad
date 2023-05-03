@@ -1,0 +1,347 @@
+/*estilo botones nav*/
+
+
+
+.galeria{
+    width: 100%;
+    border: 0px solid ;
+    height: auto;
+    
+}
+.galeria h1{
+    font-family: Verdana;
+    text-align: center;
+    margin:100px 0 15px 0;
+    font-weight: 300;
+    font-size:  x-large;
+}
+
+
+.linea{
+    border-top: 5px solid #9acd32 ;
+    margin-bottom: 40px;
+}
+
+.container_prod{
+    border: 0px solid black;
+    justify-content:center;
+    width: 80%;
+    margin-left: 300px;
+
+}
+.row_prod{
+    border: 0px solid blue;
+    width: 75%;
+    height: 1400px;
+    justify-content:center;
+
+}
+.col_prod{
+    border: 0px solid yellow;
+    justify-content:center;
+    width: 80%;
+}
+
+
+
+#btnprueba{
+    background-color: #9acd32;
+    border-color: #9acd32
+}
+#btnprueba:hover{
+    background-color: #9acd32;
+}
+
+#btnprueba2{
+    background-color: #9acd32;
+    border-color: #9acd32;
+    color: #ffffff;
+}
+
+#btnprueba2:hover{
+    background-color: #9acd32;
+}
+
+.imagen {
+    width: 1000px;
+    height: 600px;
+    display: block ;
+    margin: auto;
+    margin-top: 5px;
+}
+
+@media (max-width: 768px){
+    .imagen{
+        width: 100%;
+        height: 100%;
+    }
+} 
+
+/* .footer {
+    position:relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #9acd32;
+    color: #000000;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom:5px;
+} */
+
+/* estilos de titulos*/
+
+h4 {
+    text-align: center;
+    font-family: Verdana;
+}
+
+h3 {
+    text-align: center;
+    font-family: Verdana;
+}
+
+
+
+#img1{
+    width: 350px;
+    height: 450px;
+}
+
+.parrafo{
+    text-align: justify;
+}
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.contenedor-imagenes{
+    display:flex;
+    width: 85%;
+    margin: auto;
+    justify-content: space-around;
+     
+    border-radius:1px;
+}
+
+
+
+
+#imagen_bowl{
+    width: 32%;
+    float: left;
+    height:350px;
+    margin-bottom:5px;
+}
+
+.imagen img{
+    width: 100%;
+    height:100%;
+     
+}
+.imagen div{
+    width: 100%;
+    height:90px;
+    border: 0px solid yellow;
+    
+}
+
+.overlay{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background:rgba(85, 143, 18, 0.781) ;
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    transition: .5s ease;
+}
+
+.overlay h2{
+    color: #ffffff;
+    font-weight: 300;
+    font-size:20px;
+    position: absolute;
+    top: 20%;
+    left:50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+}
+
+.overlay p {
+    color: #ffffff;
+    bottom: 10%;
+    position: absolute;
+    justify-content: space-around;
+    text-align: center;
+    line-height: 1.6;
+}
+
+.imagen:hover .overlay{
+    height:100%;
+    cursor: pointer;
+}
+
+@media screen and (max-width:1000px){
+    .contenedor-imagenes{
+        width: 95%;
+    }
+}
+
+@media screen and (max-width:700px){
+    .contenedor-imagenes{
+        width: 90%;
+    }
+    .contenedor-imagenes .imagen{
+        width: 48%;
+    }
+}
+
+@media screen and (max-width:450px){
+    h1{
+        font-size:22px;
+    }
+    .contenedor-imagenes{
+        width: 98%;
+    }
+    .contenedor-imagenes .imagen{
+        width: 80%;
+    }
+}
+
+
+
+/* page de registro*/
+#caja{
+    margin-top:50px;
+    margin-left:20px;
+
+}
+
+.centrado {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
+
+
+/* fin de page registro*/
+
+
+
+/* -------------------comienzo fotter------------------------------------------- */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+/*:::::Pie de Pagina*/
+.pie-pagina{
+    width: 100%;
+    /* background-color: #0a141d; */
+    background-color: #8cc51b;
+ 
+}
+.pie-pagina .grupo-1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap:50px;
+    padding: 45px 0px;
+}
+.pie-pagina .grupo-1 .box figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pie-pagina .grupo-1 .box figure img{
+    width: 250px;
+}
+.pie-pagina .grupo-1 .box h2{
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+.pie-pagina .grupo-1 .box p{
+    color: #efefef;
+    margin-bottom: 10px;
+}
+.pie-pagina .grupo-1 .red-social a{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #000000;
+    margin-right: 10px;
+    /* background-color: #0d2033; */
+    background-color: #9acd32;
+    text-align: center;
+    transition: all 300ms ease;
+}
+.pie-pagina .grupo-1 .red-social a:hover{
+    color: #a0522d;
+}
+.pie-pagina .grupo-2{
+    background-color: #9acd32;
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff;
+}
+.pie-pagina .grupo-2 small{
+    font-size: 15px;
+}
+@media screen and (max-width:800px){
+    .pie-pagina .grupo-1{
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap:30px;
+        padding: 35px 0px;
+    }
+}
+
+
+
+/* para dar forma del logo de la empesa en el footer */
+#borde{
+    border-radius: 15px 50px;
+    background:#9acd32;
+    padding: 20px;
+    width: 200px;
+    height: 150px;
+  }
+  
+  
+  /* para justificar el texto del footer */
+  .textojustificado{
+      text-align: justify;
+      font-weight: 500;
+  }
+  
+  
+
+  /* nombre de nuestra empresa */
+  #nombreEmpresa {
+   border-radius: 20%;
+    }
+
+.relleno{
+    font-weight: 900;
+}
+
+/*-------------------------------- fin footer ----------------------------------*/

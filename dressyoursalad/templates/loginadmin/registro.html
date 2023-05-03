@@ -1,0 +1,16 @@
+<title>DressYourSalad &copy; Regístrate</title>
+
+{% extends 'loginadmin/layout.html' %}
+
+{% block content %}
+
+<form class="form" method="post">
+	{% csrf_token %}
+	{{ form.as_p }}
+
+	<button type="submit" id="submit" style="background-color: #9acd32;">Registrarse</button>
+</form>
+
+
+
+{% endblock %}
